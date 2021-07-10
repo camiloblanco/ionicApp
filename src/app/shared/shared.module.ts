@@ -6,6 +6,7 @@ import { LeftComponent } from './components/left/left.component';
 import { RightComponent } from './components/right/right.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AngularMaterialModule } from './angular-material/angular-material.module';
 
 
 
@@ -14,19 +15,22 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FooterComponent,
     HeaderComponent,
     LeftComponent,
-    RightComponent
+    RightComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AngularMaterialModule,
   ],
-  exports: [FooterComponent,
+  exports: [
+    FooterComponent,
     HeaderComponent,
     LeftComponent,
     RightComponent,
     RouterModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AngularMaterialModule,
   ],
 })
 export class SharedModule { }
