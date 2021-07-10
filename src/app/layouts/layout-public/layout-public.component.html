@@ -1,3 +1,23 @@
-<p>
-  layout-public works!
-</p>
+<!--Layout para escitorio-->
+<div class="container-n1 content" fxLayout="row" fxLayoutAlign="space-between stretch" fxShow.gt-sm fxHide.lt-sm>
+    <div class="container-n2" fxFlex="29">
+    </div>
+
+    <div class="container-n2" fxFlex="42">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="container-n2" fxFlex="29">
+    </div>
+
+</div>
+
+<!--Layout para mobil-->
+<div class="container-n1 content" fxLayout="row" fxLayoutAlign="space-between stretch" fxShow.lt-sm fxHide.lt-xl>
+    <div class="container-n2" fxFlex="100">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+
+

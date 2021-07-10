@@ -25,7 +25,7 @@ npm i -s @angular/flex-layout @angular/cdk
 Import the layouts in the Update app.module.ts
 Import the shared module into the layouts
 
-4. Create components
+4. Create components and organize
 
 - ng g c layouts/layout-public
 - ng g c layouts/layout-private
@@ -38,3 +38,11 @@ Import the shared module into the layouts
 - ng g c shared/components/right
 
 Delete from de app.module.ts the declarations of the modules
+Declare in shared.module.tsthe shared module the shared components
+Export the the shared module the shared components in the shared.module.ts
+
+Declare the pages in the corresponding layouts
+
+5. Create aditional pages
+
+- ng g c pages/acceso

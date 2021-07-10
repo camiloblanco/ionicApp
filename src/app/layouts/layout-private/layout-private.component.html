@@ -1,1 +1,34 @@
-<router-outlet></router-outlet>
+<!--Layout para escitorio-->
+<div class="container-n1 content" fxLayout="row" fxLayoutAlign="space-between stretch" fxShow.gt-sm fxHide.lt-sm >
+
+    <div class="container-n2" fxFlex="29">
+        <app-left></app-left>
+    </div>
+
+    <div class="container-n2" fxFlex="42">
+        <router-outlet></router-outlet>
+    </div>
+
+    <div class="container-n2" fxFlex="29">
+        <app-right></app-right>
+    </div>
+
+</div>
+
+<!--Layout para mobil-->
+
+<div fxLayout="column" fxLayoutAlign="start stretch" class="container-n2" fxShow.lt-sm fxHide.lt-xl>
+        <div class="container-n3">
+            <app-header></app-header>
+        </div>
+        
+        <div class="container-n3">
+            <router-outlet></router-outlet>
+        </div>
+        
+        <div class="container-n3">
+            <app-footer></app-footer>
+        </div>
+</div>
+
+
