@@ -6,8 +6,43 @@ ionic start app-name
 
 ionic serve
 
+
 2. Install flex lay out
 
 npm i -s @angular/flex-layout @angular/cdk
 
+
 - Update app.module.ts
+
+3. Create modules
+
+- ng g m layouts/layout-public
+
+- ng g m layouts/layout-private
+
+- ng g m shared
+
+Import the layouts in the Update app.module.ts
+Import the shared module into the layouts
+
+4. Create components and organize
+
+- ng g c layouts/layout-public
+- ng g c layouts/layout-private
+
+- ng g c pages/home
+
+- ng g c shared/components/header
+- ng g c shared/components/footer
+- ng g c shared/components/left
+- ng g c shared/components/right
+
+Delete from de app.module.ts the declarations of the modules
+Declare in shared.module.tsthe shared module the shared components
+Export the the shared module the shared components in the shared.module.ts
+
+Declare the pages in the corresponding layouts
+
+5. Create aditional pages
+
+- ng g c pages/acceso
