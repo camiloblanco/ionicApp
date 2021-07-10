@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { LayoutPublicModule } from './layouts/layout-public/layout-public.module';
 import { LayoutPrivateModule } from './layouts/layout-private/layout-private.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,8 @@ import { LayoutPrivateModule } from './layouts/layout-private/layout-private.mod
     AppRoutingModule,
     FlexLayoutModule, 
     LayoutPublicModule,
-    LayoutPrivateModule
+    LayoutPrivateModule,
+    BrowserAnimationsModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
