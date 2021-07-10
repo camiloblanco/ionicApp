@@ -8,6 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./acceso.component.scss'],
 })
 export class AccesoComponent implements OnInit {
+  public email: string = '';
+  public password: string = '';
+  hide = true;
+
 
   constructor() { }
 

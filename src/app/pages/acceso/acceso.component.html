@@ -6,24 +6,23 @@
 		</a>
 	</div>
 	
-	<div class="container-n4 ">
-		<mat-card>
-            <mat-card-title>Acceso</mat-card-title>
-			<mat-card-content>
+	<div class="container-n4 " >
+		<mat-card style="background-color: #eef5ff;">
+			<mat-card-content style="text-align: center">
 				<form>
-					<div ><p>
-						<mat-form-field>
+					<mat-form-field style="width: 100%">
 						<input type="text" matInput placeholder="Correo electrónico" formControlName="username">
+					</mat-form-field>				
+						<mat-form-field style="width: 100%">
+							<input matInput	[type]="hide ? 'password' : 'text'"	[(ngModel)]="password" matInput	placeholder="Contraseña"/>
+						  	<button	mat-icon-button	matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+								<mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+						  	</button>
 						</mat-form-field>
-					</p></div>
-					<p>
-						<mat-form-field>
-						<input type="password" matInput placeholder="contraseña" formControlName="password">
-						</mat-form-field>
-					</p>
+					
 					<!--  <p *ngIf="error" class="error">	{{ error }}	</p> -->
 					<div >
-						<button mat-raised-button color="primary" [routerLink]="['/home']" routerLinkActive="router-link-active" >Ingresar</button>
+						<button mat-raised-button class="redondeado" color="primary" [routerLink]="['/home']" routerLinkActive="router-link-active" >Ingresar</button>
 					</div>
 				</form>
 			</mat-card-content>
@@ -32,8 +31,8 @@
 	</div>
 	
 	<div class="container-n4 ">
-		<a href="https://www.w3schools.com/"><p class="normal">  <span class="color"> Olvidaste tu contraseña? </span></p></a>
-		<a href="https://www.w3schools.com/"><p class="normal">  <span class="color"> Registrate como usuaria nueva </span></p></a>
+		<a mat-button  style="color: #00a59a; text-decoration: underline; ">¿Olvidaste tu contraseña?</a>
+		<a mat-button  style="color: #00a59a; text-decoration: underline; ">Registrate como usuaria nueva </a>
 	</div>
 
 	<div class="container-n4">
