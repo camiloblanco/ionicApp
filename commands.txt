@@ -5,3 +5,9 @@ ionic start app-name
 - Select angular, blank project, custum template
 
 ionic serve
+
+2. Install flex lay out
+
+npm i -s @angular/flex-layout @angular/cdk
+
+- Update app.module.ts
