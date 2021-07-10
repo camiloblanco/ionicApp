@@ -1,3 +1,7 @@
 1. Create a blank Ionic-Angular App
 
-ionic 
+ionic start app-name
+
+- Select angular, blank project, custum template
+
+ionic serve
