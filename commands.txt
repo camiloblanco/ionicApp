@@ -46,3 +46,9 @@ Declare the pages in the corresponding layouts
 5. Create aditional pages
 
 - ng g c pages/acceso
+
+6. Add Angular material
+
+ng add @angular/material
+
+- ng g m shared/angularMaterial
