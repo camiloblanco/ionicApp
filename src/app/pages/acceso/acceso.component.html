@@ -1,11 +1,46 @@
-<p>
-  acceso works!
-</p>
+<div class="container-n2 bodyMobPub" fxLayout="column" fxLayoutAlign="space-between stretch" >
 
-<p>
-	<a [routerLink]="['']" routerLinkActive="router-link-active">Acceso</a>
-</p>
+	<div class="container-n4 ">
+		<a href="www.mujeres-e.gov.co">
+			<img src="../../../../assets/logos/logo-mujeres-e.png" class="logoMujerese" />
+		</a>
+	</div>
+	
+	<div class="container-n4 ">
+		<mat-card>
+            <mat-card-title>Acceso</mat-card-title>
+			<mat-card-content>
+				<form>
+					<div ><p>
+						<mat-form-field>
+						<input type="text" matInput placeholder="Correo electrónico" formControlName="username">
+						</mat-form-field>
+					</p></div>
+					<p>
+						<mat-form-field>
+						<input type="password" matInput placeholder="contraseña" formControlName="password">
+						</mat-form-field>
+					</p>
+					<!--  <p *ngIf="error" class="error">	{{ error }}	</p> -->
+					<div >
+						<button mat-raised-button color="primary" [routerLink]="['/home']" routerLinkActive="router-link-active" >Ingresar</button>
+					</div>
+				</form>
+			</mat-card-content>
+		</mat-card>
+	
+	</div>
+	
+	<div class="container-n4 ">
+		<a href="https://www.w3schools.com/"><p class="normal">  <span class="color"> Olvidaste tu contraseña? </span></p></a>
+		<a href="https://www.w3schools.com/"><p class="normal">  <span class="color"> Registrate como usuaria nueva </span></p></a>
+	</div>
 
-<p>
-	<a [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
-</p>
+	<div class="container-n4">
+		<img src="../../../assets/images/mujeresapp.png" class="imagenMujeres"/>
+	</div>
+
+</div>
+
+
+

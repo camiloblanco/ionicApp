@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-acceso',
@@ -10,5 +12,14 @@ export class AccesoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {}
+
+  olvidePassword() {
+    console.log('olvidePassword');
+  }
+
+  login() {
+    
+
+  }
 
 }

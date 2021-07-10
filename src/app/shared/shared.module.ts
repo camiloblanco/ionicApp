@@ -7,6 +7,7 @@ import { RightComponent } from './components/right/right.component';
 import { RouterModule } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
